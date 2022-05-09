@@ -6,8 +6,7 @@ Data$Mn_FREQ <- with(Data, 1 - MJ_FREQ)
 Chrom1 <- Data[which( Data$SCFNAME ==1 ),]
 
 Chrom1_windows <- Chrom1 %>%                        # 100kb window
-  mutate(ranges = cut(POS,
-                      seq(21, 30417973, 100000))) %>% 
+  mutate(ranges = cut(POS, seq(21, 30417973, 100000))) %>% 
   group_by(ranges) %>% 
   dplyr::summarize(het = mean(HETERO), freq = mean(Mn_FREQ)) %>% 
   as.data.frame()
