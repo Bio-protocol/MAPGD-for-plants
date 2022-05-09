@@ -1,5 +1,4 @@
 library(dplyr)
-library(Hmisc)
 
 Data <- read.table("Arabidopsis_stats.txt", head = T)
 Data$Mn_FREQ <- with(Data, 1 - MJ_FREQ)
