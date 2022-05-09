@@ -35,7 +35,7 @@ do
 done < $input
 
 # Get header file
-samtools view -H Alc-0.sort.bam > Arabidopsis.header
+samtools view -H Alc-0.filtered.sort.bam > Arabidopsis.header
 
 # Generate mpileup file
 samtools mpileup -q 25 -Q 25 -B Alc-0.filtered.sort.bam Jea.filtered.sort.bam Oy-0.filtered.sort.bam Ri-0.filtered.sort.bam Sakata.filtered.sort.bam > Arabidopsis.mpileup
