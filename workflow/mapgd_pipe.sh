@@ -78,4 +78,4 @@ cat header_Arabidopsis.genotype F_Arabidopsis.genotype footer_Arabidopsis.genoty
 # cat header_Arabidopsis.genotype 200K_F_Arabidopsis.genotype footer_Arabidopsis.genotype > wh_wf_200K_F_Arabidopsis.genotype
 
 # Run the relatedness command.
-mapgd relatedness -i wh_wf_F_Arabidopsis.genotype -o all_Arabidopsis
+mapgd relatedness -i wh_wf_F_Arabidopsis.genotype -o Arabidopsis
